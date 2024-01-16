@@ -1,0 +1,57 @@
+User => normal user, business_user, admin
+
+Comments, Ratings, Like, dislike
+
+#MODELS
+User
+Category
+Company
+Comments
+Ratings
+
+
+#Users
+id,
+name: {fist_name, last_name},
+email,
+password,
+avatar,
+contact,
+location: {
+    city,
+    country
+}
+user_type= "user" | "business_user | "admin"
+is_active,
+is_deleted
+
+
+#Category
+id,
+name,
+cover_image
+is_active,
+is_deleted
+
+
+
+#Company
+id,
+name,
+description,
+images: [],
+location:{
+    city,
+    country,
+    lat,lon
+}
+posted_by: user,
+contactInfo:{
+    email,
+    phone_number
+}
+opening_time:
+closing_time:
+sub_items: [{name, price, image, description}]
+
+
